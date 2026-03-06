@@ -60,11 +60,9 @@ body {
 }
 
 input {
-  background:
-    linear-gradient(#000, #000) padding-box,
-    linear-gradient(180deg, #ffd8eb 0%, #fea1ce 38%, #fa017c 100%) border-box;
-  border: 1.5px solid transparent;
-  border-radius: 2px;
+  background: rgba(7, 0, 22, 0.55);
+  border: 1px solid #fe037e;
+  border-radius: 4px;
   padding: .5em 1em;
   font-size: 1.2em;
   text-align: center;
@@ -72,42 +70,29 @@ input {
   color: white;
   outline: none;
   box-shadow:
-    inset 0 0 1px rgba(255, 235, 246, 0.9),
-    inset 0 0 6px rgba(254, 161, 206, 0.45),
-    0 0 4px rgba(254, 161, 206, 0.85),
-    0 0 10px rgba(250, 1, 124, 0.75),
-    0 0 18px rgba(250, 1, 124, 0.45);
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e;
+  transition: transform 0.25s ease;
   width: 100%;
   box-sizing: border-box;
 }
 
 input:focus {
-  background:
-    linear-gradient(#000, #000) padding-box,
-    linear-gradient(180deg, #ffd8eb 0%, #fea1ce 38%, #fa017c 100%) border-box;
+  background: rgba(7, 0, 22, 0.65);
   box-shadow:
-    inset 0 0 1px rgba(255, 240, 248, 1),
-    inset 0 0 8px rgba(254, 161, 206, 0.55),
-    0 0 6px rgba(254, 161, 206, 0.95),
-    0 0 14px rgba(250, 1, 124, 0.9),
-    0 0 24px rgba(250, 1, 124, 0.55);
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e;
   transform: translateY(-1px);
 }
 
 input:valid,
 input:invalid,
 input:not(:placeholder-shown) {
-  background:
-    linear-gradient(#000, #000) padding-box,
-    linear-gradient(180deg, #ffd8eb 0%, #fea1ce 38%, #fa017c 100%) border-box;
-  border-color: transparent;
+  background: rgba(7, 0, 22, 0.55);
+  border-color: #fe037e;
   box-shadow:
-    inset 0 0 1px rgba(255, 235, 246, 0.9),
-    inset 0 0 6px rgba(254, 161, 206, 0.45),
-    0 0 4px rgba(254, 161, 206, 0.85),
-    0 0 10px rgba(250, 1, 124, 0.75),
-    0 0 18px rgba(250, 1, 124, 0.45);
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e;
 }
 
 input::placeholder {
@@ -120,38 +105,26 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   -webkit-text-fill-color: white !important;
   caret-color: white;
-  border: 1.5px solid transparent !important;
-  background:
-    linear-gradient(#000, #000) padding-box,
-    linear-gradient(180deg, #ffd8eb 0%, #fea1ce 38%, #fa017c 100%) border-box !important;
+  border: 1px solid #fe037e !important;
+  background: rgba(7, 0, 22, 0.55) !important;
   -webkit-box-shadow:
-    0 0 0 1000px #000 inset,
-    inset 0 0 1px rgba(255, 235, 246, 0.9),
-    inset 0 0 6px rgba(254, 161, 206, 0.45),
-    0 0 4px rgba(254, 161, 206, 0.85),
-    0 0 10px rgba(250, 1, 124, 0.75),
-    0 0 18px rgba(250, 1, 124, 0.45) !important;
+    0 0 0 1000px rgba(7, 0, 22, 0.55) inset,
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e !important;
   box-shadow:
-    0 0 0 1000px #000 inset,
-    inset 0 0 1px rgba(255, 235, 246, 0.9),
-    inset 0 0 6px rgba(254, 161, 206, 0.45),
-    0 0 4px rgba(254, 161, 206, 0.85),
-    0 0 10px rgba(250, 1, 124, 0.75),
-    0 0 18px rgba(250, 1, 124, 0.45) !important;
+    0 0 0 1000px rgba(7, 0, 22, 0.55) inset,
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e !important;
 }
 
 input:autofill {
-  border: 1.5px solid transparent;
-  background:
-    linear-gradient(#000, #000) padding-box,
-    linear-gradient(180deg, #ffd8eb 0%, #fea1ce 38%, #fa017c 100%) border-box;
+  border: 1px solid #fe037e;
+  background: rgba(7, 0, 22, 0.55);
 }
 
 button {
-  background:
-    linear-gradient(#000, #000) padding-box,
-    linear-gradient(180deg, #ffd8eb 0%, #fea1ce 38%, #fa017c 100%) border-box;
-  border: 1.5px solid transparent;
+  background: rgba(7, 0, 22, 0.55);
+  border: 1px solid #fe037e;
   border-radius: 4px;
   padding: .3em 1em;
   font-size: 2em;
@@ -164,11 +137,8 @@ button {
     0 0 30px rgba(250, 1, 124, 0.65);
   outline: none;
   box-shadow:
-    inset 0 0 1px rgba(255, 235, 246, 0.9),
-    inset 0 0 6px rgba(254, 161, 206, 0.45),
-    0 0 4px rgba(254, 161, 206, 0.85),
-    0 0 10px rgba(250, 1, 124, 0.75),
-    0 0 18px rgba(250, 1, 124, 0.45);
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e;
   transition: text-shadow 0.25s ease;
   cursor: pointer;
   width: fit-content;
@@ -200,6 +170,10 @@ button.is-loading .button-loader {
 
 button:hover,
 button:focus {
+  background: rgba(7, 0, 22, 0.65);
+  box-shadow:
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e;
   text-shadow:
     0 0 1px rgba(255, 240, 248, 1),
     0 0 10px rgba(254, 161, 206, 1),
@@ -232,4 +206,167 @@ button:disabled {
 #form-message.error {
   color: #ffd8e7;
   text-shadow: 0 0 8px rgba(255, 87, 157, 0.45);
+}
+
+body.ranking-page {
+  place-items: start center;
+}
+
+.ranking-container {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.ranking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ranking-title-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ranking-header h1 {
+  margin: 0;
+  font-family: "NeonBright", monospace;
+  font-size: 2.3rem;
+  background: linear-gradient(180deg, #66bec2 0%, #376267 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 0 1px rgba(215, 246, 247, 0.95),
+    0 0 10px rgba(102, 190, 194, 0.85),
+    0 0 22px rgba(55, 98, 103, 0.8),
+    0 0 34px rgba(55, 98, 103, 0.65);
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.ranking-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ranking-logo {
+  width: clamp(90px, 16vw, 150px);
+  height: auto;
+}
+
+.ranking-table-card {
+  background: rgba(7, 0, 22, 0.55);
+  border: 1px solid #fe037e;
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 0 2px #feb2d8,
+    inset 0 0 0 3px #fe037e;
+  backdrop-filter: blur(1px);
+  padding: 0 1.1rem;
+}
+
+.ranking-loading {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking-loading[hidden] {
+  display: none !important;
+}
+
+.ranking-status {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  color: #ffd8eb;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking-status:empty {
+  display: none;
+}
+
+.ranking-loader {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Roboto Mono", monospace;
+  color: #fff8fe;
+}
+
+.ranking-table td {
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 175, 220, 0.7);
+  text-align: left;
+  font-size: clamp(1.4rem, 3vw, 2.05rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.ranking-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.ranking-table td:first-child {
+  width: 72px;
+  color: #ff1d9d;
+  font-weight: 500;
+  font-style: italic;
+  padding-left: 0.9rem;
+}
+
+.ranking-table td:nth-child(2) {
+  text-shadow: 0 0 8px rgba(255, 145, 204, 0.28);
+}
+
+.ranking-table td:last-child {
+  width: 150px;
+  color: #ff1d9d;
+  border-left: 4px solid rgba(255, 178, 222, 0.75);
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .ranking-header {
+    align-items: flex-start;
+  }
+
+  .ranking-header h1 {
+    max-width: 2.6rem;
+  }
+
+  .ranking-table-card {
+    padding: 0 0.45rem;
+  }
+
+  .ranking-table td {
+    font-size: 1.1rem;
+    padding: 0.8rem 0.4rem;
+  }
+
+  .ranking-table td:first-child {
+    width: 28px;
+    padding-left: 0.45rem;
+  }
+
+  .ranking-table td:last-child {
+    width: 92px;
+    border-left-width: 3px;
+  }
 }
